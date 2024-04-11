@@ -33,10 +33,9 @@ public class TicketUseCase : ITicketUseCase
                 }
             }
         }
-        
+
         List<ParkingSpace> parkingSpaces = _parkingSpaceUseCase.GetAvailableParkingSpaces(data.Type);
         
-
         Vehicle? vehicle = _vehicleUseCase.GetByCharacteristics(data.Plate);
         if(vehicle == null)
         {
@@ -56,9 +55,7 @@ public class TicketUseCase : ITicketUseCase
         );
 
         Ticket response = _ticketRepository.Save(ticket);
-        
         _parkingSpaceUseCase.AddVehicle(parkingSpaces, vehicle);
-        
         return response;
     }
 
