@@ -27,6 +27,8 @@ A lista abaixo representa os requisitos de projeto e o respectivo "end-point"/fu
 5) Alguns dos setores está cheio - Essa verificação é feita no ParkingSpaceUseCase e não em um "end-point" específico
 6) Quantas vagas as vans estão ocupando? - "v1/ParkingSpace/SumVanParkingSpaces"
 
+Para mais detalhes a respeito dos "end-points", favor acessar a seguinte URL após o servidor se iniciar: http://localhost:5000/swagger/index.html
+
 # Observações Finais
 1) O projeto contaria também com um front-end dedicado, porém o tempo de desenvolvimento(aproximadamente 10 horas) foi insuficiente. Dessa forma, fica como sugestão a implementação
 2) Qualquer dúvida ou problema durante a utilização do sistema, favor me informar para que possa auxiliar
